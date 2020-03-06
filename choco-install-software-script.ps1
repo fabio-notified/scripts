@@ -14,7 +14,7 @@ ${software-list} = @(
 	@{ 	Name = "azure-cli"; Params = @() } 
 	@{ 	Name = "spotify"; Params = @() } 
 	@{ 	Name = "vim"; Params = @() } 
-	@{ 	Name = "microsoft-teams"; Params = @() } 
+	@{ 	Name = "git-credential-manager-for-windows"; Params = @() } 
 )
 
 $choco = @(where.exe choco.exe)[0]
@@ -49,8 +49,9 @@ ${software-list} | ForEach-Object -Begin { } -Process {
 
 #Install git
 &$choco install git -y --params="'/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal'" --Install-arguments="'/DIR=C:\git'"
-
+&$choco install git-credential-manager-for-windows -y
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + "C:\git\cmd\" , [System.EnvironmentVariableTarget]::User)
+
 
 # Install vim editor 
 
