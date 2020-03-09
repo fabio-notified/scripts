@@ -15,6 +15,8 @@ ${software-list} = @(
 	@{ 	Name = "spotify"; Params = @() } 
 	@{ 	Name = "vim"; Params = @() } 
 	@{ 	Name = "git-credential-manager-for-windows"; Params = @() } 
+	@{ 	Name = "docker-desktop"; Params = @() } 
+
 )
 
 $choco = @(where.exe choco.exe)[0]
@@ -52,7 +54,8 @@ ${software-list} | ForEach-Object -Begin { } -Process {
 &$choco install git-credential-manager-for-windows -y
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + "C:\git\cmd\" , [System.EnvironmentVariableTarget]::User)
 
-
+# Install Docker Desktop
+&$choco install docker-desktop -y
 # Install vim editor 
 
 &$choco install vim -y
@@ -85,7 +88,7 @@ if ( -not (Test-Path ${vimrc-file-path})) {
 # Install powershell modules
 
 Install-Module Posh-Git -Confirm:$false -Force
-
+Install-Module Pester -Confirm:$false -Force
 #Create powershell profile
 
 if ( -not (Test-Path $profile)) {
