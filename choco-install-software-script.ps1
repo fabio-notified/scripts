@@ -16,6 +16,7 @@ ${software-list} = @(
 	@{ 	Name = "vim"; Params = @() } 
 	@{ 	Name = "git-credential-manager-for-windows"; Params = @() } 
 	@{ 	Name = "docker-desktop"; Params = @() } 
+	@{ 	Name = "nuget.commandline"; Params = @() } 
 
 )
 
@@ -43,7 +44,8 @@ ${software-list} | ForEach-Object -Begin { } -Process {
 
 
 }
-
+# Install Nuget CLI
+&$choco install nuget.commandline -y
 
 # Install Slack
 
@@ -51,7 +53,9 @@ ${software-list} | ForEach-Object -Begin { } -Process {
 
 #Install git
 &$choco install git -y --params="'/GitAndUnixToolsOnPath /NoAutoCrlf /WindowsTerminal'" --Install-arguments="'/DIR=C:\git'"
+
 &$choco install git-credential-manager-for-windows -y
+
 [System.Environment]::SetEnvironmentVariable("Path", $env:Path + "C:\git\cmd\" , [System.EnvironmentVariableTarget]::User)
 
 # Install Docker Desktop
