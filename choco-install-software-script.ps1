@@ -2,7 +2,7 @@
 
 # Set history file path
 [System.Environment]::SetEnvironmentVariable("PSReadlineHistory", "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt", "Machine")
- [System.Environment]::SetEnvironmentVariable("Dev", "$env:home\fabio-files\dev", "Machine")
+ [System.Environment]::SetEnvironmentVariable("Dev", "S:\dev", "Machine")
  [System.Environment]::SetEnvironmentVariable("AZURE_DEVOPS_EXT_PAT", "obcs5qpwcpafins3voetjmpvduxrnxqvahgagg6eywtqmotqdi2q", "Machine")
 $resultTest = ""
 
