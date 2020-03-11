@@ -2,6 +2,8 @@
 
 # Set history file path
 [System.Environment]::SetEnvironmentVariable("PSReadlineHistory", "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt", "Machine")
+ [System.Environment]::SetEnvironmentVariable("Dev", "$env:home\fabio-files\dev", "Machine")
+ [System.Environment]::SetEnvironmentVariable("AZURE_DEVOPS_EXT_PAT", "obcs5qpwcpafins3voetjmpvduxrnxqvahgagg6eywtqmotqdi2q", "Machine")
 $resultTest = ""
 
 # Install choco Installer
@@ -17,6 +19,8 @@ ${software-list} = @(
 	@{ 	Name = "git-credential-manager-for-windows"; Params = @() } 
 	@{ 	Name = "docker-desktop"; Params = @() } 
 	@{ 	Name = "nuget.commandline"; Params = @() } 
+	@{ 	Name = "azure-devops"; Params = @() } 
+	@{ 	Name = "microsoftazurestorageexplorer"; Params = @() } 
 
 )
 
