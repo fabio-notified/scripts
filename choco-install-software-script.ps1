@@ -47,7 +47,9 @@ ${software-list} | ForEach-Object -Begin { } -Process {
 	&$choco install $currentSoftwareItem.Name  -y $resultTest
 
 
-}
+} 
+
+&$choco install microsoftazurestorageexplorer -y 
 # Install Nuget CLI
 &$choco install nuget.commandline -y
 
