@@ -19,7 +19,7 @@ $webAppNames | ForEach-Object {
         if ( $currentVersion.value -ne $version) {
             
             # Set the value for slots
-            az webapp config appsettings set -g ${resource-group} -n $currentAppName --settings WEBSITE_NODE_DEFAULT_VERSION=$version --slot $_ 
+            az webapp config appsettings set -g ${resource-group} -n $currentAppName --settings WEBSITE_ADD_SITENAME_BINDINGS_IN_APPHOST_CONFIG=1 --slot $_ 
         }
     }
 

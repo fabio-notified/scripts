@@ -4,7 +4,7 @@ $appName = "ProductionNotifiedItemSvc"
 
 ${access-restrictions} = az webapp config access-restriction show -g notified --name "ProductionNotifiedItemsService" | ConvertFrom-Json -Depth 4
 
-${access-restrictions}.ipSecurityRestrictions[10] | ForEach-Object {
+${access-restrictions}.ipSecurityRestrictions | ForEach-Object {
 
     $currentItem = $_
 
@@ -21,7 +21,6 @@ ${access-restrictions}.ipSecurityRestrictions[10] | ForEach-Object {
             --description $currentItem.description `
             --subnet  $currentItem.vnet_subnet_resource_id `
             --priority $currentItem.priority `
-            --slot warmup `
             --debug 
 
             return
@@ -35,10 +34,8 @@ ${access-restrictions}.ipSecurityRestrictions[10] | ForEach-Object {
         --description $currentItem.description `
         --ip-address  $currentItem.ip_address `
         --priority $currentItem.priority `
-        --slot warmup `
         --debug 
 
 }
 
-rsc
 
