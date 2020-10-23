@@ -1,0 +1,97 @@
+[
+  {
+    "name": "AppSettings__ItemsServiceSettings__AnalyticsServeMode",
+    "slotSetting": true,
+    "value": "Legacy"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__CassandraEarliestData",
+    "slotSetting": true,
+    "value": "2020-05-06"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__CassandraSettings__OverrideConnectionPooling",
+    "slotSetting": true,
+    "value": "true"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__CassandraSettings__RandomParallelism",
+    "slotSetting": true,
+    "value": "5"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__CassandraSettings__SequentialParallelism",
+    "slotSetting": true,
+    "value": "2"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__Compare",
+    "slotSetting": true,
+    "value": "false"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__CompareLogMode",
+    "slotSetting": true,
+    "value": "Full"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__DapperAccountItemServeMode",
+    "slotSetting": true,
+    "value": "ItemsServiceIfCassandraHasData"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__MigrationSettings__Compare",
+    "slotSetting": true,
+    "value": "false"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__ServeFromCassandra",
+    "slotSetting": true,
+    "value": "true"
+  },
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "slotSetting": false,
+    "value": "Staging"
+  },
+  {
+    "name": "SLOT_NAME",
+    "slotSetting": true,
+    "value": "warmup"
+  },
+  {
+    "name": "STARTUP_LOGGING_SEQ_API_KEY",
+    "slotSetting": false,
+    "value": "K7dN49syaEvfAfJJrGzj"
+  },
+  {
+    "name": "STARTUP_LOGGING_SEQ_URL",
+    "slotSetting": false,
+    "value": "http://40.113.83.225:5341"
+  },
+  {
+    "name": "WEBSITE_WEBDEPLOY_USE_SCM",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
+    "name": "WEBSITE_RUN_FROM_PACKAGE",
+    "slotSetting": false,
+    "value": "0"
+  },
+  {
+    "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
+    "slotSetting": false,
+    "value": "true"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__DapperAccountItemsCompare",
+    "slotSetting": true,
+    "value": "true"
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__MigratedSearchProfiles",
+    "slotSetting": true,
+    "value": "[1203, 1205, 1206, 1207, 1208, 88, 1177, 1233, 9999, 1309]"
+  }
+]
