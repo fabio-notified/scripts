@@ -49,7 +49,6 @@ function New-WorkItem {
         [ValidateNotNullOrEmpty()]
         [Alias("tags")] 
         $Fields= "Tags=DevOps"
-
     )
     
     begin {
@@ -81,7 +80,6 @@ function New-Branch {
         [Alias("item")]
         $WorkItem
     ) 
-
     
     process {
 
@@ -94,8 +92,7 @@ function New-Branch {
             if (($branchName -match $pattern )) {
             
                 $branchName = $branchName -replace $pattern, ""
-            }
-        
+            }  
     
             &"git.exe" checkout -b $branchName
 
@@ -105,6 +102,5 @@ function New-Branch {
         Write-Host "Created branch: $branchName"
 
         Return $WorkItem
-
     }
 }
