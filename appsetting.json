@@ -1,97 +1,152 @@
 [
   {
     "name": "AppSettings__ItemsServiceSettings__AnalyticsServeMode",
-    "slotSetting": true,
-    "value": "Legacy"
+    "value": "ItemsService",
+    "slotSetting": true
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__CassandraConsistencyLevel",
+    "value": "LocalQuorum",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__CassandraEarliestData",
-    "slotSetting": true,
-    "value": "2020-05-06"
+    "value": "1901-01-01",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__CassandraSettings__OverrideConnectionPooling",
-    "slotSetting": true,
-    "value": "true"
+    "value": "true",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__CassandraSettings__RandomParallelism",
-    "slotSetting": true,
-    "value": "5"
+    "value": "5",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__CassandraSettings__SequentialParallelism",
-    "slotSetting": true,
-    "value": "2"
+    "value": "2",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__Compare",
-    "slotSetting": true,
-    "value": "false"
+    "value": "false",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__CompareLogMode",
-    "slotSetting": true,
-    "value": "Full"
+    "value": "Full",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__DapperAccountItemServeMode",
-    "slotSetting": true,
-    "value": "ItemsServiceIfCassandraHasData"
+    "value": "ItemsService",
+    "slotSetting": true
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__MigratedSearchProfiles__0",
+    "value": "1119",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__MigrationSettings__Compare",
-    "slotSetting": true,
-    "value": "false"
+    "value": "false",
+    "slotSetting": true
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__ServeEqualGroupsFromCassandra",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__ServeExternalIdFromCassandra",
+    "value": "true",
+    "slotSetting": true
   },
   {
     "name": "AppSettings__ItemsServiceSettings__ServeFromCassandra",
-    "slotSetting": true,
-    "value": "true"
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__UseExternalIdPostgresFallback",
+    "value": "false",
+    "slotSetting": true
+  },
+  {
+    "name": "AppSettings__ItemsServiceSettings__UseInQueryForKeys",
+    "value": "false",
+    "slotSetting": true
   },
   {
     "name": "ASPNETCORE_ENVIRONMENT",
-    "slotSetting": false,
-    "value": "Staging"
+    "value": "Test",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureKeyVault__Cache__Bypass",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "Serilog__MinimumLevel__Default",
+    "value": "Verbose",
+    "slotSetting": true
   },
   {
     "name": "SLOT_NAME",
-    "slotSetting": true,
-    "value": "warmup"
+    "value": "main",
+    "slotSetting": true
   },
   {
     "name": "STARTUP_LOGGING_SEQ_API_KEY",
-    "slotSetting": false,
-    "value": "K7dN49syaEvfAfJJrGzj"
+    "value": "K7dN49syaEvfAfJJrGzj",
+    "slotSetting": false
   },
   {
     "name": "STARTUP_LOGGING_SEQ_URL",
-    "slotSetting": false,
-    "value": "http://40.113.83.225:5341"
+    "value": "http://40.113.83.225:5341",
+    "slotSetting": false
   },
   {
-    "name": "WEBSITE_WEBDEPLOY_USE_SCM",
-    "slotSetting": false,
-    "value": "false"
-  },
-  {
-    "name": "WEBSITE_RUN_FROM_PACKAGE",
-    "slotSetting": false,
-    "value": "0"
+    "name": "WEBSITE_ADD_SITENAME_BINDINGS_IN_APPHOST_CONFIG",
+    "value": "1",
+    "slotSetting": true
   },
   {
     "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
-    "slotSetting": false,
-    "value": "true"
+    "value": "true",
+    "slotSetting": false
   },
   {
-    "name": "AppSettings__ItemsServiceSettings__DapperAccountItemsCompare",
-    "slotSetting": true,
-    "value": "true"
+    "name": "WEBSITE_HTTPLOGGING_RETENTION_DAYS",
+    "value": "2",
+    "slotSetting": false
   },
   {
-    "name": "AppSettings__ItemsServiceSettings__MigratedSearchProfiles",
-    "slotSetting": true,
-    "value": "[1203, 1205, 1206, 1207, 1208, 88, 1177, 1233, 9999, 1309]"
+    "name": "WEBSITE_LOCAL_CACHE_OPTION",
+    "value": "always",
+    "slotSetting": true
+  },
+  {
+    "name": "WEBSITE_NODE_DEFAULT_VERSION",
+    "value": "6.9.1",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_RUN_FROM_PACKAGE",
+    "value": "0",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_WEBDEPLOY_USE_SCM",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITES_CONTAINER_START_TIME_LIMIT",
+    "value": "500",
+    "slotSetting": true
   }
 ]
